@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lets do it!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <h1>Der Palindrom Checker</h1>
+</header>
+<body>
+<div class="my-flex-cont">
+    
+    <div class="my-flex-box">   
+    <h2>Was ist ein Palindrom</h2>
+    <p>Palindrom ist griechisch und bedeutet "rückwärts laufend". Es gibt Wortpalindrome und sogar Satzpalindrome. Palindrome
+    müssen nicht immer einen Sinn ergeben, jedoch muss die Zeichenkette von vorne nach hinten sowie von hinten nach vorne
+    gelesen übereinstimmen. <br><br> Quele: <br> <a href ="https://www.experto.de/kommunikation/was-ist-ein-palindrom.html" >www.experto.de</a></p>
+    </div>
+
+    <div class="my-flex-box">   
+
+        <hr id = "check2">
+        <h2 id = "check1">Geben Sie ein Wort/Zahl ein</h2>
+  
+        <form id = "form1">
+            <label name="321" for="123"> Check:</label>
+            <input type="text" id="inp1">
+            <input type="submit" value="Check It" id= "but1" onclick="isPalindrome(string)">
+        </form>
+
+<p id = "check3">
+    Beispiele: racecar, 123321, abccba, Hannah.
+</p>
+
+<hr>
+
+
+
+       
+<script type = "text/javascript">
+    
+ var istPalindrome = function (string) {
+        if (string === string.split('').reverse().join('')) {
+            alert(string + ' ist ein Palindrome.');
+        }
+        else {
+            alert(string + ' ist KEIN Palindrome');
+        }
+    }
+
+    document.getElementById('form1').onsubmit = function () {
+        istPalindrome(document.getElementById('inp1').value);
+    }
+
+
+</script>
+
+    </div>
+    <div class="my-flex-box">
+    <h2>Mein Code</h2>
+     
+    <p id = "explain">In dem Code habe ich:
+        <br>
+    <br>  - .split("") benuzt um das Wort in die einzelnen Buchstaben zu trennen und jede Buchstabe in ein Array zu setzen.
+    <br>  - .reverse() benuzt um den ganzen Array umzudrehen.
+    <br>  - .join() um den ganzen Array zu nehmen und ihn zusammenzukleben.
+    <br>   Àm Ende habe ich das Wort mit dem umgedrehtem Wort vergliechen und geguckt ob die gleich sind.
+    <br>   - Wenn die gleich sind: taucht alert() auf und sagt, dass das Wort ein Palindrom ist.
+    <br>   - Wenn es nicht gleich ist, dann ist es kein Palindrome.
+    <br>
+    </p>
+    
+    <p id = "mycode">
+
+   
+        <br>
+            var istPalindrome = function(string) {
+                <br>
+                if (string === string.split('').reverse().join('')) {
+                    <br>
+                    alert(string + ' ist ein Palindrome.');
+                    <br>
+                }
+                <br>
+                else {
+                    <br>
+                    alert(string + ' ist KEIN Palindrome');
+                    <br>
+                }
+                <br>
+            }
+            <br>
+
+            document.getElementById('form1').onsubmit = function () {
+                <br>
+                istPalindrome(document.getElementById('inp1').value);
+                <br>
+            }
+            <br>
+
+     </p>  
+
+<h4>By Alexandros Ntontsov
+    <br>
+    for elbformat content solutions
+</h4>
+
+    </div>
+</div>
+
+
+
+   
+</body>
+</html>

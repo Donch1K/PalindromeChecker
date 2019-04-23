@@ -1,0 +1,123 @@
+header h1 {
+    background-color: rgb(28, 202, 150);
+    width: 98%;
+    height: 75px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 7px;
+    text-align: center;
+    
+}
+
+
+h2 {
+    text-align: center;
+    
+    
+}
+
+h4{
+    color: gray;
+    text-align: right;
+    padding-top: 50px;
+}
+
+#check1 {
+    
+    margin-top: 40px;
+}
+
+#check2 {
+    margin-top: 140px;
+}
+
+#check3 {
+    font-size: 13px;
+    text-align: center;
+}
+
+#mycode {
+    font-size: 20px;
+    text-align: center;
+}
+
+#explain {
+    font-size: 16px;
+}
+
+
+p {
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    margin-top: 25px;
+    word-spacing: -0.3ex; 
+}
+
+body {
+    background-color: cadetblue;
+    animation: back  5s infinite ease-in-out;
+}
+
+#form1 {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+
+
+.my-flex-box {
+ margin: 7px;
+ padding: 5px;
+ border-radius: 8px;
+ 
+}
+
+.my-flex-box:nth-child(1) {
+width: 25%;
+height: 350px;
+margin: 20px;
+margin-top: 30px;
+padding: auto;
+background-color: aqua;
+float: left;
+position: relative;
+
+}
+
+.my-flex-box:nth-child(2) {
+  margin-top: 30px;
+  background-color: blanchedalmond;
+  position: absolute;
+  width: 25%;
+  height: 50%;
+  left: 27.5%;
+  font-size: 18px;
+}
+
+.my-flex-box:nth-child(3) {
+ width: 40%;
+ margin-top: 30px;
+ background-color: burlywood;
+ position: absolute;
+ left: 54%;
+ height: 75%;
+}
+
+
+back{
+
+}
+
+
+@keyframes back {
+ 
+0% {background-color :cadetblue
+}
+50% {background-color: #1E5868;
+}
+100%{background-color : 60868E;
+}
+}
